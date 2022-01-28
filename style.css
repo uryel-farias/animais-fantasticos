@@ -1,0 +1,194 @@
+body, h1, h2, h3, p, ul, li, dt, dd, dl {
+    margin: 0px;
+    padding: 0px;
+} 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+
+}
+
+body {
+    background: #faf6ed;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr ;
+}
+
+.menu {
+    grid-column: 3 / 5;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+    background: #fd5;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #222;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.grid-section {
+    grid-column: 2 / 4 ;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 110px 300px 1fr;
+    margin-bottom: 4rem;
+
+}
+
+.grid-section h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 6em;
+    line-height: 1;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    grid-column: 1/4;
+    
+}
+
+
+.animais h2::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #fd5;
+
+}
+
+.animais h2{
+    font-family: monospace;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 1rem;
+    color: #E54;
+}
+
+.animais p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    text-align: justify;
+
+}
+
+.animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.animais-lista::-webkit-scrollbar{
+    width: 20px;
+
+}
+
+.animais-lista::-webkit-scrollbar-thumb{
+    background: #fd5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed ;
+}
+
+.animais-description {
+    grid-column: 3;
+}
+.animais-description section{
+    margin-bottom: 3rem;
+}
+
+.fac-lista {
+    grid-column: 2/4;
+}
+
+.fac-lista dt {
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #E54;
+    font-size: 2em;
+
+}
+
+.fac-lista dt::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fd5;
+}
+
+.fac-lista dd{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-left: 50px;
+
+}
+
+.mapa {
+    grid-column: 2;
+
+}
+
+.dados-contato{
+    grid-column: 3;
+}
+
+.dados-contato li {
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-size: 1.3em;
+
+
+}
+
+.dados-contato li::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #fd5;
+
+}
+
+footer {
+    grid-column: 3/5;
+    margin-bottom: 2em;
+    background: #fd5;
+
+
+}
+
+footer p {
+    font-family: monospace;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 30px;
+}

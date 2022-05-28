@@ -206,10 +206,12 @@ footer p {
 @media (max-width: 700px ){
     body {
         grid-template-columns: 1fr;
+
     }
 
     .menu {
         grid-column: 1/5;
+        margin-top: 0;
     }
 
     .grid-section .dados-contato {
@@ -239,6 +241,7 @@ footer p {
 
     footer{
         grid-column: 1/5;
+        margin-bottom: 0;
     }
 }
 
@@ -259,5 +262,33 @@ footer p {
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+.js .js-accordion dd{
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: ' ⮟';
+}
+
+.js-accordion dt.ativar-dd::after {
+    content: ' ⮝';
+}
+
+.js-accordion dd.ativar-dd {
+    display: block;
+    animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown{
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
     }
 }

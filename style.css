@@ -101,6 +101,10 @@ body {
     grid-column: 2;
 }
 
+.animais-lista {
+    cursor: pointer;
+}
+
 .animais-lista::-webkit-scrollbar{
     width: 20px;
 
@@ -235,5 +239,25 @@ footer p {
 
     footer{
         grid-column: 1/5;
+    }
+}
+
+.js .js-tabconteudo section {
+    display: none;
+}
+
+.js-tabconteudo section.ativo {
+    display: block !important;
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-2rem, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }

@@ -7,12 +7,13 @@ function initTabNav(){
     // 3 - verifica se a quantidade de itens dos li são iguais as de conteudo 
     if(tabMenu.length && tabConteudo.length){
 
-        // 6 - remone a classe aido de todas as sessoes e depois adicoana a classe ativo no index que foi passado 
+        // 6 - remone a classe ativo de todas as seçoes e depois adiciona a classe ativo no index que foi passado 
         function activeTab(index) {
             tabConteudo.forEach((section) => {
                 section.classList.remove("ativo");
             });
-            tabConteudo[index].classList.add("ativo");
+            const direcao = tabConteudo[index].dataset.anime;
+            tabConteudo[index].classList.add("ativo", direcao);
         }
 
         // 4 - adiciona a classe ativo ao primeiro item da lista
@@ -82,21 +83,3 @@ function initScrollSuave() {
 
 initScrollSuave();
 
-function teste(resp){
-    let res = resp;
-    for (let i=1; i<10;i + 1){
-        if (i % 2== 0){
-            res = res + 1;
-        } else {
-            res = res + 2;
-        }
-    
-        if (res > 5) {
-            res = res - 5;
-        }
-    }
-
-    return res;
-}
-
-teste();

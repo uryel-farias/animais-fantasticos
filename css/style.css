@@ -51,6 +51,9 @@ body {
     font-weight: bold;
 }
 
+#sobre-height {
+    height: 75%;
+}
 .grid-section {
     grid-column: 2 / 4 ;
     width: 100%;

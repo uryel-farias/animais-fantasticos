@@ -18,6 +18,8 @@
 
 <body>
     <div class="grid-container">
+
+        <!--Início Menu-->
         <nav class="menu js-menu">
             <button data-menu="buttom" aria-expanded="false" aria-controls="menu">Menu</button>
 
@@ -38,6 +40,10 @@
                 <li><a data-modal="abrir" href="login.html">Login</a></li>
             </ul>
         </nav>
+
+        <!--Fim Menu-->
+        <!--Início Animais-->
+
         <section class="grid-section animais" id="animais">
             <h1 class="titulo-h1">Animais Fantasticos</h1>
             <ul class="animais-lista js-tabmenu">
@@ -126,7 +132,20 @@
             </div>
         </section>
 
-        
+        <!--Fim Animais-->
+        <!--Início Números-->
+
+        <section class="grid-section">
+            <h1 class="titulo">Números</h1> 
+            <div class="numero-animal">
+                <h3>Lobos</h3>
+                <span data-numero="">4874</span>
+            </div>
+        </section>
+
+        <!--Fim Números-->
+        <!--Início FAC-->
+
         <section class="grid-section fac" id="fac">
             <h1>FAQ</h1>
             <dl class="fac-lista js-accordion" >
@@ -140,6 +159,9 @@
                 <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio assumenda laborum, eaque possimus magni aspernatur quas animi dignissimos minima commodi corrupti nulla quisquam harum eum. Voluptate quibusdam provident nesciunt non.</dd>
             </dl>
         </section>
+
+        <!--Fim FAC-->
+        <!--Início Contato-->
 
         <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1>Contato</h1>
@@ -157,10 +179,17 @@
         
         </section>
 
+        <!--Fim Contato-->
+        <!--Início Rodapé-->
+
         <footer>
             <p>Todos os direitos reservados.</p>
         </footer>
+
+        <!--Fim Rodapé-->
     </div>
+
+        <!--Início Modal-->
 
     <section class="modal-container" data-modal="container">
         <div class="modal">
@@ -178,6 +207,7 @@
         </div>
     </section>
 
+        <!--Fim Modal-->
     <script type="module" src="script.js"></script>
 
 </body>

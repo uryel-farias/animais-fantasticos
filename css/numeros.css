@@ -1,0 +1,41 @@
+.numero-grid{
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#numeros-titulo {
+  margin-bottom: 4rem;
+}
+
+.numero-grid h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+
+.numero-grid span {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  color: #e54;
+
+}
+
+@media (max-width:700px){
+  .numero-grid {
+    grid-column: 1;
+    padding-left: 3rem;
+  }
+
+  .numero-grid h3 {
+    font-size: 1.5rem;
+
+  }
+
+  .numero-grid span {
+    font-size: 1.3rem;
+  
+  }
+}
